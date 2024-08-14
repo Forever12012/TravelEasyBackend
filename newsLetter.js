@@ -6,7 +6,7 @@ const { PrismaClient } = require("@prisma/client");
 
 const prisma = new PrismaClient();
 sgMail.setApiKey(
-  "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"
+  "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"
 );
 
 const app = express();

@@ -5,7 +5,7 @@ const sgMail = require("@sendgrid/mail");
 const { PrismaClient } = require("@prisma/client");
 
 sgMail.setApiKey(
-  "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"
+  "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"
 );
 const prisma = new PrismaClient();
 const app = express();
