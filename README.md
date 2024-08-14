@@ -22,7 +22,7 @@ Clone the Frontend Backend Repo with the following command -
 - git clone https://github.com/Forever12012/TravelEasyBackend.git
 - Install all the node dependencies using npm install.
 
-Make the following changes in your .env file -
+Create a .env file and make the following changes in your .env file -
 ----------------------------------------------------
 - DATABASE_URL="mysql://username:password@localhost:3306/travel_easy_db"
 
