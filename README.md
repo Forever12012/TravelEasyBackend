@@ -65,3 +65,7 @@ API Endpoints
   - Description: This endpoint allows users to submit their contact information, including their name, email, question, and comment. The provided data is stored in the database, and a confirmation email is sent to the user's email     
     address to acknowledge their inquiry.
 
+This is how the .env file should look - 
+------------------------------------------------
+
+![Screenshot (58)](https://github.com/user-attachments/assets/5e6715df-bf20-47cd-b40d-f482335b40cb)
