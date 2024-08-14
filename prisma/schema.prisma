@@ -1,0 +1,29 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model NewsLetter {
+  id    Int    @id @default(autoincrement())
+  email String @unique
+}
+
+model Contact {
+  id       Int    @id @default(autoincrement())
+  name     String
+  email    String
+  question String
+  comment  String
+}
+
+model Signup {
+  id       Int    @id @default(autoincrement())
+  name     String
+  email    String  @unique
+  password String
+}
+

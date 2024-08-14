@@ -1,0 +1,6 @@
+{
+  "watch": ["newsLetter.js", "contact.js", "login.js"],
+  "ext": "js",
+  "exec": "node",
+  "ignore": ["*.test.js"]
+}
