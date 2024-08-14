@@ -3,11 +3,11 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const sgMail = require("@sendgrid/mail");
 const { PrismaClient } = require("@prisma/client");
+require("dotenv").config();
 
 const prisma = new PrismaClient();
-sgMail.setApiKey(
-  "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"
-);
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const app = express();
 const port = 8000;

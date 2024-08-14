@@ -6,9 +6,8 @@ const { PrismaClient } = require("@prisma/client");
 const bcrypt = require("bcrypt");
 require("dotenv").config();
 
-sgMail.setApiKey(
-  "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"
-);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 const prisma = new PrismaClient();
 const app = express();
 const port = 8002;
@@ -49,7 +48,7 @@ app.post("/signup", async (req, res) => {
       from: "tusharharinkhede10@gmail.com",
       subject: "Welcome to TravelEasy!",
       text: "Thank you for Signing up with us! Hope you have a great time with us.",
-      html: "<strong>Thank you for contacting us! We will get back to you soon.</strong>",
+      html: "<strong>Thank you for Signing up with us! Hope you have a great time with us.</strong>",
     };
 
     await sgMail.send(msg);
