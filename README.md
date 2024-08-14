@@ -67,5 +67,5 @@ API Endpoints
 
 This is how the .env file should look - 
 ------------------------------------------------
-
+Use the given api key for sendgrid integration
 ![Screenshot (58)](https://github.com/user-attachments/assets/5e6715df-bf20-47cd-b40d-f482335b40cb)
